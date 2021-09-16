@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coustom.html</title>
+    <style>
+        :root {
+            --side-width: 200px;
+            --dark-border: 2px solid black;
+            --main-color: orange;
+            --border-color: slateblue;
+            --background-color: slateblue;
+        }
+
+        h1 {
+            color: var(--main-color);
+        }
+
+        h2 {
+            color: var(--main-color);
+            border: 2px solid var(--border-color)
+        }
+
+        h6 {
+            background-color: slateblue;
+            ;
+        }
+
+        p {
+            color: var(--main-color);
+        }
+
+        footer {
+            clear: both;
+            color: var(--main-color);
+            border: var(--dark-border);
+        }
+
+        .asid-nav,
+        .blogs {
+            float: left;
+            height: 500px;
+        }
+
+        .asid-nav {
+            background-color: springgreen;
+            width: var(--side-width);
+
+        }
+
+        .blogs {
+            background-color: tomato;
+            width: calc(100% - var(--side-width));
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>this is my coustom website</h1>
+        <p>this is paragraph</p>
+    </header>
+    <main>
+        <h2>my main contant </h2>
+        <h6>my mini heading</h6>
+    </main>
+    <section>
+        <aside class="asid-nav">
+            My side navigation
+        </aside>
+        <div class="blogs">
+            <h4>blogs</h4>
+        </div>
+    </section>
+    <footer>
+        <p><small>copyright</small></p>
+    </footer>
+</body>
+
+</html>
